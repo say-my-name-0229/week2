@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exp-2C — Button Click Handler</title>
+  <style>body{font-family:Arial,Helvetica,sans-serif;text-align:center;padding:40px} button{padding:8px 12px;font-size:16px}</style>
+</head>
+<body>
+  <h1>React Button Click Handler (static)</h1>
+  <p id="msg">Click the button</p>
+  <button id="btn">Click Me</button>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', function(){
+      document.getElementById('msg').textContent = 'Button was clicked!';
+    });
+  </script>
+  <p><a href="../index.html">Back</a></p>
+</body>
+</html>

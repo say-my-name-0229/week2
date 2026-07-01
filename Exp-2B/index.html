@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exp-2B — Functional Counter</title>
+  <style>body{font-family:Arial,Helvetica,sans-serif;text-align:center;padding:40px} button{padding:8px 12px;font-size:16px}</style>
+</head>
+<body>
+  <h1>Functional Counter (static)</h1>
+  <h2 id="count">0</h2>
+  <button id="inc">Increment</button>
+
+  <script>
+    (function(){
+      let count = 0;
+      const el = document.getElementById('count');
+      function setCount(v){ count = v; el.textContent = count; }
+      document.getElementById('inc').addEventListener('click', () => setCount(count + 1));
+    })();
+  </script>
+  <p><a href="../index.html">Back</a></p>
+</body>
+</html>
